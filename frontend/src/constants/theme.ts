@@ -1,0 +1,13 @@
+export const THEME = {
+  default: "light",
+
+  transitionDuration: 300,
+
+  radius: {
+    sm: "0.5rem",
+    md: "0.75rem",
+    lg: "1rem",
+    xl: "1.5rem",
+    full: "9999px",
+  },
+} as const;

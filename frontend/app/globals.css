@@ -1,26 +1,181 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ===========================================================
+   Theme
+=========================================================== */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+
+    /* Background */
+    --background: 36 18% 98%;
+    --foreground: 222 47% 11%;
+
+    /* Surface */
+    --surface: 36 14% 99%;
+    --card: 0 0% 100%;
+
+    /* Border */
+    --border: 30 15% 90%;
+
+    /* Text */
+    --muted: 220 9% 46%;
+    --muted-foreground: 220 8% 60%;
+
+    /* Xiaomi */
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 36 18% 95%;
+    --accent: 30 45% 94%;
+
+    /* Status */
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --destructive: 0 84% 60%;
+  }
+
+  .dark {
+    color-scheme: dark;
+
+    --background: 220 18% 7%;
+    --foreground: 0 0% 98%;
+
+    --surface: 220 16% 10%;
+    --card: 220 16% 12%;
+
+    --border: 220 12% 18%;
+
+    --muted: 220 8% 70%;
+    --muted-foreground: 220 8% 55%;
+
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 12% 18%;
+    --accent: 24 100% 18%;
+
+    --success: 142 70% 40%;
+    --warning: 40 95% 50%;
+    --destructive: 0 75% 55%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+
+    overflow-x: hidden;
+
+    baackground-image:
+      radial-gradient(circle at top right,
+        rgba(255, 105, 0, 0.05),
+        transparent 40%),
+      radial-gradient(circle at bottom left,
+        rgba(255, 170, 90, 0.08),
+        transparent 35%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  button {
+    @apply transition-all duration-300;
+  }
+
+  img {
+    @apply select-none;
+  }
+
+  ::selection {
+    @apply bg-primary text-primaryForeground;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ===========================================================
+   Components
+=========================================================== */
+
+@layer components {
+  .container-default {
+    @apply container mx-auto px-4;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .glass {
+    @apply border border-border bg-white/70 backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-orange-500 to-yellow-500 bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
+
+/* ===========================================================
+   Utilities
+=========================================================== */
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+  }
+}
+
+/* ===========================================================
+   Scrollbar
+=========================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7a1a;
 }
