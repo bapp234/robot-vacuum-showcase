@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 
 export default function BackgroundEffects() {
   return (
@@ -22,13 +21,8 @@ export default function BackgroundEffects() {
       />
 
       {/* Blob 1 */}
-      <motion.div
-        animate={{
-          x: [0, -25, 0],
-          y: [0, 30, 0],
-          scale: [1, 1.08, 1],
-        }}
-        transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+      <div
+        
         className="
           absolute -left-24 top-[10%]
           h-[380px] w-[380px]
@@ -40,13 +34,7 @@ export default function BackgroundEffects() {
       />
 
       {/* Blob 2 */}
-      <motion.div
-        animate={{
-          x: [0, 25, 0],
-          y: [0, -25, 0],
-          scale: [1, 1.05, 1],
-        }}
-        transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+      <div
         className="
           absolute -right-16 bottom-[10%]
           h-[420px] w-[420px]
@@ -58,12 +46,8 @@ export default function BackgroundEffects() {
       />
 
       {/* Blob 3 – tạo điểm nhấn ở trung tâm, rất nhẹ */}
-      <motion.div
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
+      <div
+        
         className="
           absolute left-1/2 top-1/2
           h-[300px] w-[300px]

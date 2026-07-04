@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 export default function BackgroundEffects() {
   return (
     <div
@@ -67,17 +65,8 @@ export default function BackgroundEffects() {
 
       {/* ---------------- Left Orb ---------------- */}
 
-      <motion.div
-        animate={{
-          x: [0, 35, 0],
-          y: [0, -25, 0],
-          scale: [1, 1.08, 1],
-        }}
-        transition={{
-          duration: 18,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+      <div
+        
         className="
           absolute
           -left-28
@@ -98,17 +87,8 @@ export default function BackgroundEffects() {
 
       {/* ---------------- Right Orb ---------------- */}
 
-      <motion.div
-        animate={{
-          x: [0, -25, 0],
-          y: [0, 20, 0],
-          scale: [1, 1.05, 1],
-        }}
-        transition={{
-          duration: 22,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+      <div
+        
         className="
           absolute
           -right-32
@@ -129,15 +109,8 @@ export default function BackgroundEffects() {
 
       {/* ---------------- Top Highlight ---------------- */}
 
-      <motion.div
-        animate={{
-          opacity: [0.45, 0.7, 0.45],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+      <div
+        
         className="
           absolute
 

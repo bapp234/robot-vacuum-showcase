@@ -105,7 +105,6 @@ export default function Features() {
             <motion.div
               animate={{
                 y: [0, -12, 0],
-                rotate: [0, 1.5, 0, -1.5, 0],
               }}
               transition={{
                 duration: 6,
@@ -119,19 +118,17 @@ export default function Features() {
                 alt="Xiaomi X20+ Center View"
                 width={360}
                 height={360}
-                priority
                 className="
-                  w-72
-                  max-w-[260px]
-                  lg:max-w-[340px]
-                  object-contain
-                  transition-transform
-                  duration-500
-                  hover:scale-110
-                  hover:-rotate-2
-                  drop-shadow-[0_30px_60px_rgba(0,0,0,.22)]
-                  dark:drop-shadow-[0_40px_80px_rgba(0,0,0,.55)]
-                "
+    w-72
+    max-w-[260px]
+    lg:max-w-[340px]
+    object-contain
+    transition-transform
+    duration-300
+    hover:scale-105
+    drop-shadow-[0_30px_60px_rgba(0,0,0,.22)]
+    dark:drop-shadow-[0_40px_80px_rgba(0,0,0,.55)]
+  "
               />
             </motion.div>
           </motion.div>

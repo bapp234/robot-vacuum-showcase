@@ -51,13 +51,18 @@ export default function SpecificationsLeft() {
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={activeIndex}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1, y: [-8, 8, -8] }}
-                            exit={{ opacity: 0, scale: 1.1 }}
-                            transition={{
-                                duration: 0.4,
-                                y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+                            initial={{
+                                opacity: 0
                             }}
+
+                            animate={{
+                                opacity: 1
+                            }}
+
+                            exit={{
+                                opacity: 0
+                            }}
+
                             className="relative w-[80%] h-[80%]"
                         >
                             <Image

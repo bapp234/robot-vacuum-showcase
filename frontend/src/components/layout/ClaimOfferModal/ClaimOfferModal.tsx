@@ -5,7 +5,6 @@ import { X } from "lucide-react";
 
 import {
     useForm,
-    type SubmitHandler,
 } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";

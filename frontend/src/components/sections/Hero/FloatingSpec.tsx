@@ -10,20 +10,9 @@ export default function FloatingSpec({
   title,
   value,
   className,
-  delay = 0,
 }: FloatingSpecProps) {
   return (
     <motion.div
-      animate={{
-        y: [0, -8, 0],
-      }}
-      transition={{
-        duration: 4,
-        repeat: Infinity,
-        repeatType: "mirror",
-        ease: "easeInOut",
-        delay,
-      }}
       whileHover={{
         y: -8,
         scale: 1.05,

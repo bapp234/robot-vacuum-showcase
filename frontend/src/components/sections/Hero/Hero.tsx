@@ -11,7 +11,6 @@ import ScrollIndicator from "./ScrollIndicator";
 import { motion } from "framer-motion";
 import {
   staggerContainer,
-  fadeUp,
 } from "@/src/animations/hero";
 
 export default function Hero() {

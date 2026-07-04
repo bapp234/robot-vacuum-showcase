@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   scaleIn,
-  fadeLeft,
   floatingRobot,
   floatingTransition,
 } from "@/src/animations/hero";
