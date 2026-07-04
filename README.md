@@ -34,7 +34,9 @@ Lý do lựa chọn Stack công nghệ này nhằm tối ưu hóa trải nghiệ
   - **Accordion mở rộng thông minh:** Mô phỏng luồng trải nghiệm thu gọn/mở rộng mượt mà truyền cảm hứng từ các trang TMĐT lớn (Điện Máy Xanh), giúp tinh gọn chiều dài trang.
   - **Mini Gallery ảnh tương tác:** Sử dụng `AnimatePresence` xử lý hiệu ứng chuyển đổi góc nhìn sản phẩm mượt mà, sống động.
   - **Header UX Polish:** Sự kiện tự động cuộn trang mượt mà (Smooth scroll) về vị trí trung tâm Hero khi tương tác vào Logo ở bất kỳ phân khúc trang nào.
-- ✅ **- Tích hợp Webhook & Validation: Xử lý luồng thông tin người dùng gửi về Webhook thực tế để thu thập lead, kết hợp kiểm soát dữ liệu đầu vào nghiêm ngặt ngay tại vòng ngoài bằng thư viện Zod.
+- ✅ **- Tích hợp Webhook & Validation: Xử lý luồng thông tin người dùng gửi về Webhook thực tế để thu thập lead, kết hợp kiểm soát dữ liệu đầu vào nghiêm ngặt ngay tại vòng ngoài bằng thư viện Zod, dữ liệu sẽ được gửi đến một trang webhook dưới dạng file json thông tin .
+- <img width="1918" height="860" alt="image" src="https://github.com/user-attachments/assets/1a7c6001-892e-4d52-88cc-49d77bd84374" />
+
 
 ---
 
