@@ -1,3 +1,21 @@
-import type { HTMLAttributes } from "react";
+export interface FooterLink {
+  label: string;
+  href: string;
+}
 
-export type FooterProps = HTMLAttributes<HTMLElement>;
+export interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+export interface FooterBrandContent {
+  title: string;
+  description: string;
+}
+
+export interface FooterNewsletterContent {
+  title: string;
+  description: string;
+  placeholder: string;
+  button: string;
+}

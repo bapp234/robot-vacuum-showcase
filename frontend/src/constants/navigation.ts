@@ -12,10 +12,6 @@ export const NAVIGATION = [
     href: "#specifications",
   },
   {
-    label: "Gallery",
-    href: "#gallery",
-  },
-  {
     label: "FAQ",
     href: "#faq",
   },

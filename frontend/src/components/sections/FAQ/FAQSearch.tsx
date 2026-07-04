@@ -92,32 +92,6 @@ export default function FAQSearch({
           "
         />
 
-        {/* Shortcut hint */}
-
-        <span
-          className="
-            mr-4
-
-            hidden
-            rounded-lg
-
-            border
-            border-border
-
-            bg-background/70
-
-            px-2
-            py-1
-
-            text-xs
-
-            text-muted-foreground
-
-            md:block
-          "
-        >
-          ⌘K
-        </span>
       </div>
     </motion.div>
   );
