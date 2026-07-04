@@ -6,7 +6,6 @@ import { Menu, X } from "lucide-react";
 import Logo from "@/src/components/layout/Logo";
 import Navigation from "@/src/components/layout/Navigation";
 
-import Button from "@/src/components/ui/Button";
 import Divider from "@/src/components/ui/Divider";
 
 import { cn } from "@/src/utils";
@@ -87,13 +86,6 @@ export default function MobileMenu({
         />
 
         <Divider className="my-6" />
-
-        <Button
-          className="mt-6 w-full"
-          size="lg"
-        >
-          Claim Offer
-        </Button>
       </aside>
     </div>
   );
