@@ -26,7 +26,7 @@ export default function Hero() {
         pb-16
       "
     >
-  <BackgroundEffects />
+      <BackgroundEffects />
 
       <Container>
         <motion.div
@@ -47,7 +47,9 @@ export default function Hero() {
           <HeroVisual />
         </motion.div>
       </Container>
-      <ScrollIndicator />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex justify-center items-center">
+        <ScrollIndicator />
+      </div>
     </Section>
   );
 }
