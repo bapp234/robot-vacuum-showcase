@@ -6,13 +6,12 @@ import Container from "@/src/components/ui/Container";
 import Section from "@/src/components/ui/Section";
 
 import FAQHeader from "./FAQHeader";
-import FAQSearch from "./FAQSearch";
 import FAQAccordion from "./FAQAccordion";
 
 import { FAQ_ITEMS } from "./faq.constants";
 
 export default function FAQ() {
-  const [search, setSearch] = useState("");
+  const [search] = useState("");
 
   const filteredItems = useMemo(() => {
     const keyword = search.toLowerCase();
@@ -36,10 +35,7 @@ export default function FAQ() {
       <Container className="max-w-4xl">
         <FAQHeader />
 
-        <FAQSearch
-          value={search}
-          onChange={setSearch}
-        />
+        
 
         <FAQAccordion
           items={filteredItems}

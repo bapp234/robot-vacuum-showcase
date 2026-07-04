@@ -1,0 +1,15 @@
+{
+  "name": "Xiaomi Robot Vacuum X20+",
+  "short_name": "Robot Vacuum",
+  "theme_color": "#ff6900",
+  "background_color": "#09090b",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/logo.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

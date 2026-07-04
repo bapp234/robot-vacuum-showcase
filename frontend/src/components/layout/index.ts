@@ -9,7 +9,3 @@ export { default as Navigation } from "./Navigation";
 export { default as MobileMenu } from "./MobileMenu";
 
 export { default as ThemeToggle } from "./ThemeToggle";
-
-export { default as ScrollProgress } from "./ScrollProgress";
-
-export { default as FloatingActions } from "./FloatingActions";
