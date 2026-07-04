@@ -1,1 +1,5 @@
 export { default } from "./Header";
+
+export type {
+  HeaderProps,
+} from "./header.types";

@@ -44,7 +44,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${manrope.variable}`}
       >
-        <ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          >
 
           <ModalProvider>
 

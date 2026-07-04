@@ -1,3 +1,2 @@
-import type { HTMLAttributes } from "react";
 
-export type HeaderProps = HTMLAttributes<HTMLElement>;
+export type HeaderProps = Record<string, never>;

@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-
-const siteName = "Xiaomi Robot Vacuum X20+";
-
-const description =
-  "Discover Xiaomi Robot Vacuum X20+ with powerful 6000Pa suction, intelligent LDS laser navigation, automatic mop washing, hot air drying, and seamless smart home integration.";
+import { BRAND } from "@/src/constants/brand";
 
 const url = "https://robot-vacuum-showcase.vercel.app";
 
@@ -12,12 +8,9 @@ const previewImage = "/images/og-cover.jpg";
 export const metadata: Metadata = {
   metadataBase: new URL(url),
 
-  title: {
-    default: siteName,
-    template: `%s | ${siteName}`,
-  },
+  title: BRAND.fullName,
 
-  description,
+  description: BRAND.description,
 
   keywords: [
     "Xiaomi",
@@ -52,11 +45,11 @@ export const metadata: Metadata = {
 
     url,
 
-    siteName,
+    siteName: BRAND.fullName,
 
-    title: siteName,
+    title: BRAND.fullName,
 
-    description,
+    description: BRAND.description,
 
     images: [
       {
