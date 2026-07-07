@@ -1,6 +1,7 @@
 import type { Viewport } from "next";
 
 import { Inter, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
           </ModalProvider>
 
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
